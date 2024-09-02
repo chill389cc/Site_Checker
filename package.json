@@ -1,0 +1,21 @@
+{
+  "name": "site_checker",
+  "version": "1.0.0",
+  "description": "A site to check websites for text and send email alerts on changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "node -r ts-node/register --env-file .env index.ts"
+  },
+  "author": "Caleb Hill (chill389cc)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
