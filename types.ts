@@ -1,8 +1,8 @@
 export enum STATUS {
-    COOLDOWN,
-    WAIT,
-    READY,
-    GAVE_UP
+  COOLDOWN,
+  WAIT,
+  READY,
+  GAVE_UP
 }
 
 // TODO update these comments
@@ -11,11 +11,11 @@ export enum STATUS {
  * interval - in miliseconds
  * msgCooldown - in miliseconds
  */
-export type Site = {
-    name: string
-    url: string
-    textMatch: string
-    interval: number
-    msgCooldown: number
-    status: STATUS
+export interface Site {
+  name: string
+  url: string
+  textMatch: string
+  interval: number
+  msgCooldown: number
+  status: STATUS
 }
